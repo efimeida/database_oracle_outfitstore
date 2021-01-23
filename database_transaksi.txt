@@ -1,0 +1,27 @@
+
+SQL*Plus: Release 11.2.0.2.0 Production on Sat Jan 23 15:25:02 2021
+
+Copyright (c) 1982, 2014, Oracle.  All rights reserved.
+
+SQL> conn efimeida_10042
+Enter password:
+Connected.
+SQL> desc transaksi;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID_TRANSAKSI                                       NUMBER(6)
+ NAMA_PEMBELI                                       VARCHAR2(15)
+ ALAMAT                                             VARCHAR2(13)
+ NO_TELP                                            VARCHAR2(14)
+ ID_BARANG                                          NUMBER(6)
+ QTY                                                NUMBER(10)
+
+SQL> select*from transaksi;
+
+ID_TRANSAKSI NAMA_PEMBELI    ALAMAT        NO_TELP         ID_BARANG        QTY
+------------ --------------- ------------- -------------- ---------- ----------
+           1 Rimar           Cikarang      085799027524          123         10
+           2 Ajeng           Bandung       085799024457          123         10
+           3 Asri            Purworejo     085788045678          234         10
+
+SQL>

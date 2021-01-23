@@ -1,0 +1,21 @@
+
+SQL*Plus: Release 11.2.0.2.0 Production on Sat Jan 23 15:30:40 2021
+
+Copyright (c) 1982, 2014, Oracle.  All rights reserved.
+
+SQL> conn efimeida_10042
+Enter password:
+Connected.
+SQL> desc login_admin;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ USERNAME                                           VARCHAR2(15)
+ PASSWORD                                           VARCHAR2(15)
+
+SQL> select*from login_admin;
+
+USERNAME        PASSWORD
+--------------- ---------------
+efi             123
+
+SQL>

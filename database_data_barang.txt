@@ -1,0 +1,27 @@
+
+SQL*Plus: Release 11.2.0.2.0 Production on Sat Jan 23 15:28:04 2021
+
+Copyright (c) 1982, 2014, Oracle.  All rights reserved.
+
+SQL> conn efimeida_10042
+Enter password:
+Connected.
+SQL> desc data_barang;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID_BARANG                                          NUMBER(6)
+ NAMA_BARANG                                        VARCHAR2(20)
+ HARGA_BARANG                                       VARCHAR2(15)
+ STOK_BARANG                                        NUMBER(10)
+
+SQL> select*from data_barang;
+
+ ID_BARANG NAMA_BARANG          HARGA_BARANG    STOK_BARANG
+---------- -------------------- --------------- -----------
+       123 Outher Hitam         150000                 2000
+       234 Outher Coklat        160000                 2000
+       345 Outher Pink          160000                 2000
+       456 Outher Maroon        160000                 2000
+       567 Outher Army          160000                 2000
+
+SQL>
